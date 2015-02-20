@@ -1,0 +1,11 @@
+{% set pydio = salt['grains.filter_by']({
+    'Debian': {
+      'pkg': 'pydio',
+
+      'pydio_repo': 'deb http://dl.ajaxplorer.info/repos/apt stable main',
+      'pydio_src': 'deb-src http://dl.ajaxplorer.info/repos/apt stable main',
+      'repo_file': '/etc/apt/sources.list.d/ajaxplorer.list',
+      'key_url': 'salt://pydio/pydio.pgp',
+
+    },
+}, merge=salt['pillar.get']('pydio:lookup')) %}
