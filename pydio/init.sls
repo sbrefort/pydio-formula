@@ -10,7 +10,7 @@ pydio-repo:
     - file: {{ pydio.repo_file }}
     - key_url: {{ pydio.key_url }}
     - require_in:
-      - pkg: {{pydio.pkg}}
+      - pkg: {{ pydio.pkg }}
 
 pydio-src:
   pkgrepo.managed:
@@ -18,4 +18,4 @@ pydio-src:
     - file: {{ pydio.repo_file }}
     - key_url: {{ pydio.key_url }}
     - require_in:
-      - pkg: {{pydio.pkg}}
+      - pkg: {{ pydio.pkg }}
