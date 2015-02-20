@@ -1,0 +1,12 @@
+pydio:
+  lookup:
+    #package name
+    pkg: pydio
+    # deb url to binary repository
+    pydio_repo: deb http://dl.ajaxplorer.info/repos/apt stable main
+    # deb url to source repository
+    pydio_src: deb-src http://dl.ajaxplorer.info/repos/apt stable main
+    # url to local repository file
+    repo_file: /etc/apt/sources.list.d/ajaxplorer.list
+    # url to repository public key
+    key_url: salt://pydio/pydio.pgp
